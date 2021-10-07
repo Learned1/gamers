@@ -18,7 +18,9 @@ controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
             timer.after(500, function () {
                 ProgressOverride = false
                 progress.value = progress.max
+                progress.setFlag(SpriteFlag.Invisible, true)
             })
+            progress.value = progress.max
         }
     })
 })
@@ -28,6 +30,7 @@ function Load () {
     // 1 Drill Speed
     // 2 Health
     PlayerSkills = [1, 1, 1]
+    PlayerDirection = "d"
     Clothes = []
     progress = statusbars.create(4, 40, StatusBarKind.Progress)
     progress.setColor(1, 0, 1)
@@ -69,6 +72,9 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
                 progress.max = 16
                 timer.background(function () {
                     for (let index = 0; index < 16; index++) {
+                        if (ProgressOverride) {
+                            break;
+                        }
                         pause(500)
                         progress.value += -1
                         if (ProgressOverride) {
@@ -114,13 +120,17 @@ function Movement (Overide: boolean, Speed: number) {
     } else {
         if (controller.anyButton.isPressed()) {
             if (controller.left.isPressed()) {
+                PlayerDirection = "l"
                 Hitbox.vx = Speed * -1
             } else if (controller.right.isPressed()) {
+                PlayerDirection = "r"
                 Hitbox.vx = Speed * 1
             }
             if (controller.up.isPressed()) {
+                PlayerDirection = "t"
                 Hitbox.vy = Speed * -1
             } else if (controller.down.isPressed()) {
+                PlayerDirection = "d"
                 Hitbox.vy = Speed * 1
             }
         } else {
@@ -232,6 +242,7 @@ let GlobalCamera = false
 let BreachMenuActive = false
 let BreachMenuSelected = 0
 let Clothes: Sprite[] = []
+let PlayerDirection = ""
 let PlayerSkills: number[] = []
 let Hitbox: Sprite = null
 let progress: StatusBarSprite = null
@@ -244,6 +255,19 @@ Level(0)
 Load()
 game.onUpdate(function () {
     for (let value of Clothes) {
+        if (PlayerDirection == "d") {
+            Clothes[0].setImage(assets.image`PlayerV2`)
+            Clothes[2].setImage(assets.image`Shirt_Dev`)
+        } else if (PlayerDirection == "t") {
+            Clothes[0].setImage(assets.image`PlayerV2Top`)
+            Clothes[2].setImage(assets.image`Shirt_Dev`)
+        } else if (PlayerDirection == "r") {
+            Clothes[0].setImage(assets.image`PlayerV2Right`)
+            Clothes[2].setImage(assets.image`Shirt_Dev_Right`)
+        } else if (PlayerDirection == "l") {
+            Clothes[0].setImage(assets.image`PlayerV2Left`)
+            Clothes[2].setImage(assets.image`Shirt_Dev_Left`)
+        }
         value.setPosition(Hitbox.x, Hitbox.y)
     }
 })

@@ -1169,27 +1169,6 @@ fffffffffffffff.
 . . . . . f f . . f f . . . . . 
 . . . . . . . . . . . . . . . . 
 `;
-            case "image27":
-            case "PlayerV2":return img`
-. . . . . . . . . . . . . . . . 
-. . . f f f f f f f f f f . . . 
-. . f d d d d d d d d d d f . . 
-. f d d d d d d d d d d d d f . 
-. f d d d d d d d d d d d d f . 
-. f d f f d d d d d d f f d f . 
-. f d d f d d d d d d f d d f . 
-. f d d d d d d d d d d d d f . 
-. f d d d f f f f f f d d d f . 
-. . f d d d d d d d d d d f . . 
-. . . f f b b b b b b f f . . . 
-. . f d d d d d d d d d d f . . 
-. . f d d d d d d d d d d f . . 
-. . f d d d d d d d d d d f . . 
-. . f d d d d b b d d d d f . . 
-. . . f f d d f f d d f f . . . 
-. . . . f d d f f d d f . . . . 
-. . . . . f f . . f f . . . . . 
-`;
             case "image31":
             case "PlayerV0":return img`
 ..ffff............
@@ -1864,6 +1843,132 @@ f . . 1 . . . . . . . . . . . f
 f . . 1 . . . . . . . . . . . f 
 f . . . 1 1 . . . . . . . . . f 
 f f f f f f f f f f f f f f f f 
+`;
+            case "image27":
+            case "PlayerV2":return img`
+. . . . . . . . . . . . . . . . 
+. . . f f f f f f f f f f . . . 
+. . f d d d d d d d d d d f . . 
+. f d d d d d d d d d d d d f . 
+. f d d d d d d d d d d d d f . 
+. f d f f d d d d d d f f d f . 
+. f d d f d d d d d d f d d f . 
+. f d d d d d d d d d d d d f . 
+. f d d d f f f f f f d d d f . 
+. . f d d d d d d d d d d f . . 
+. . . f b b b b b b b b f . . . 
+. . f d d d d d d d d d d f . . 
+. . f d d d d d d d d d d f . . 
+. . f d d d d d d d d d d f . . 
+. . f d d d d b b d d d d f . . 
+. . . f f d d f f d d f f . . . 
+. . . . f d d f f d d f . . . . 
+. . . . . f f . . f f . . . . . 
+`;
+            case "image45":
+            case "PlayerV2Top":return img`
+. . . . . . . . . . . . . . . . 
+. . . f f f f f f f f f f . . . 
+. . f d d d d d d d d d d f . . 
+. f d d d d d d d d d d d d f . 
+. f d d d d d d d d d d d d f . 
+. f d d d d d d d d d d d d f . 
+. f d d d d d d d d d d d d f . 
+. f d d d d d d d d d d d d f . 
+. f d d d d d d d d d d d d f . 
+. . f d d d d d d d d d d f . . 
+. . . f d d d d d d d d f . . . 
+. . f d d d d d d d d d d f . . 
+. . f d d d d d d d d d d f . . 
+. . f d d d d d d d d d d f . . 
+. . f d d d d b b d d d d f . . 
+. . . f f d d f f d d f f . . . 
+. . . . f d d f f d d f . . . . 
+. . . . . f f . . f f . . . . . 
+`;
+            case "image43":
+            case "PlayerV2Right":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . f f f f f f . . . . . 
+. . . . f d d d d d d f . . . . 
+. . . f d d d d d d d d f . . . 
+. . . f d d d d d d d d f . . . 
+. . . f d d d d d f f d f . . . 
+. . . f d d d d d d f d f . . . 
+. . . f d d d d d d d f f . . . 
+. . . f d d d d d d d d f . . . 
+. . . . f d d d d b b f . . . . 
+. . . . f d d d d d d d f . . . 
+. . . . f d d d d d d d f . . . 
+. . . . f d d d d d d d f . . . 
+. . . . f d d d d d f f . . . . 
+. . . . . f d d d d f . . . . . 
+. . . . . f d d d d f . . . . . 
+. . . . . f d d d d f . . . . . 
+. . . . . . f f f f . . . . . . 
+`;
+            case "image44":
+            case "PlayerV2Left":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . f f f f f f . . . . . 
+. . . . f d d d d d d f . . . . 
+. . . f d d d d d d d d f . . . 
+. . . f d d d d d d d d f . . . 
+. . . f d f f d d d d d f . . . 
+. . . f d f d d d d d d f . . . 
+. . . f f d d d d d d d f . . . 
+. . . f d d d d d d d d f . . . 
+. . . . f b b d d d d f . . . . 
+. . . f d d d d d d d f . . . . 
+. . . f d d d d d d d f . . . . 
+. . . f d d d d d d d f . . . . 
+. . . . f f d d d d d f . . . . 
+. . . . . f d d d d f . . . . . 
+. . . . . f d d d d f . . . . . 
+. . . . . f d d d d f . . . . . 
+. . . . . . f f f f . . . . . . 
+`;
+            case "image47":
+            case "Shirt_Dev_Left":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . a f a f a . . . . . 
+. . . . . . f a f a f . . . . . 
+. . . . . . a f a f a . . . . . 
+. . . . . . f a f a f . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`;
+            case "image46":
+            case "Shirt_Dev_Right":return img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . a f a f a . . . . . . 
+. . . . . f a f a f . . . . . . 
+. . . . . a f a f a . . . . . . 
+. . . . . f a f a f . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
 `;
         }
         return null;
